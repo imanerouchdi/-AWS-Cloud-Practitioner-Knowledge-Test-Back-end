@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 200PX;
+  height: 54px;
+  border-radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background-image: url("../asset/images/5-motivos-para-utilizar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100VH;
+  margin: 0;
+  padding: 0;
+}
+.body .btn-start {
+  background-color: #f46d3c;
+  width: 170PX;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #FFF;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+.btn-start {
+  background-color: #f46d3c;
+  width: 170PX;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #FFF;
+  border-radius: 8px;
+  font-size: 22px;
+  position: absolute;
+  top: 90%;
+  left: 85%;
+}
+
+.info-page {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  position: relative;
+  border: 5px solid #f46d3c;
+  border-radius: 11px;
+  /* page result*/
+}
+.info-page .progress-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  margin: auto;
+  counter-reset: step;
+  position: absolute;
+  top: 5%;
+  left: 35%;
+}
+.info-page .progress-bar::before, .info-page .progress-bar .progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 500px;
+  background-color: #FFF;
+  z-index: 0;
+}
+.info-page .progress-bar .progress {
+  width: 0%;
+  background-color: #fff;
+}
+.info-page .progress-bar .progress-step {
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-page .progress-bar .progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+.info-page .progress-bar .progress-step::after {
+  content: attr(data-title);
+}
+.info-page .progress-bar .active {
+  background-color: rgb(5, 203, 124);
+}
+.info-page .pageinfo {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+.info-page .pageinfo .info-text {
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  width: 80%;
+  line-height: 1.6;
+}
+.info-page .pageinfo h5 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+.info-page .pageinfo .list-ordonner {
+  list-style-position: inside;
+  line-height: 1.6;
+  margin-bottom: 15PX;
+}
+.info-page .quizPage {
+  position: absolute;
+  top: 15%;
+  left: 11%;
+  width: 70%;
+}
+.info-page .quizPage .quizForm {
+  position: relative;
+  background: #000;
+  border: 4px solid #f46d3c;
+  height: 600px;
+  left: 5%;
+  border-radius: 7px;
+}
+.info-page .quizPage .quizForm .quizTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20PX;
+}
+.info-page .quizPage .quizForm .quizTitle div {
+  margin-top: 25px;
+}
+.info-page .quizPage .quizForm .quizTitle .title {
+  margin-left: 78px;
+}
+.info-page .quizPage .quizForm .countQuestion {
+  position: relative;
+  right: 9%;
+}
+.info-page .quizPage .quizForm .countQuestion span {
+  color: #fff;
+}
+.info-page .quizPage .quizForm .questionCountDown {
+  margin-left: 78px;
+}
+.info-page .quizPage .quizForm .quizQuestion {
+  position: relative;
+  left: 15%;
+  top: 10%;
+}
+.info-page .quizPage .quizForm .quizQuestion .input {
+  position: absolute;
+  top: 70%;
+  width: 750PX;
+  HEIGHT: 110PX;
+  BORDER-RADIUS: 16PX;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  background-color: #000;
+  border: 1px solid #f46d3c;
+}
+.info-page .quizPage .quizForm .quizAnswers {
+  position: relative;
+  top: 38%;
+  left: 7%;
+}
+.info-page .quizPage .quizForm .quizAnswers button {
+  position: relative;
+  margin-left: 9PX;
+  height: 100px;
+  width: 450px;
+  BORDER-RADIUS: 16PX;
+  background-color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 1px solid #f46d3c;
+  color: #FFF;
+}
+.info-page .quizPage .quizForm .quizAnswers button:hover {
+  background-color: #f46d3c;
+  color: #000;
+}
+.info-page .quizPage .quizForm .quizAnswers button:active {
+  background-color: #000;
+  box-shadow: 0 5px #f46d3c;
+  color: #f46d3c;
+  transform: translateY(3px);
+}
+.info-page .pageresult {
+  position: absolute;
+  top: 13%;
+  left: 4%;
+  width: 80%;
+}
+.info-page .pageresult .result {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 700;
+}
+.info-page .pageresult .result .quizForm_result {
+  position: relative;
+  background: #000;
+  border: 4px solid #f46d3c;
+  height: 600px;
+  left: 30%;
+  border-radius: 7px;
+  width: 70%;
+}
+.info-page .pageresult .result .quizForm_result .quizTitle_result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20PX;
+}
+.info-page .pageresult .result .quizForm_result .quizTitle_result div {
+  margin-top: 25px;
+}
+.info-page .pageresult .result .quizForm_result .quizTitle_result .title_result {
+  margin-left: 78px;
+}
+.info-page .pageresult .result .quizForm_result .countQuestion_result {
+  position: relative;
+  right: 9%;
+}
+.info-page .pageresult .result .quizForm_result .countQuestion_result span {
+  color: #fff;
+}
+.info-page .pageresult .result .quizForm_result .quizQuestion_result {
+  position: relative;
+  left: 8%;
+  top: 10%;
+}
+.info-page .pageresult .result .quizForm_result .quizQuestion_result .input_result {
+  position: relative;
+  right: 7%;
+  width: 577PX;
+  HEIGHT: 110PX;
+  BORDER-RADIUS: 16PX;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  background-color: #000;
+  border: 1px solid #f46d3c;
+}
+.info-page .pageresult .result .quizForm_result .quizAnswers_result .answers1 {
+  display: flex;
+}
+.info-page .pageresult .result .quizForm_result .quizAnswers_result .answers1 button {
+  position: relative;
+  left: 22%;
+  margin-top: 86px;
+  MARGIN-RIGHT: 13PX;
+  height: 100px;
+  width: 250px;
+  BORDER-RADIUS: 16PX;
+  background-color: #000;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 1px solid #f46d3c;
+  color: #fff;
+}
+.info-page .pageresult .result .quizForm_result .quizAnswers_result .answers2 {
+  display: flex;
+}
+.info-page .pageresult .result .quizForm_result .quizAnswers_result .answers2 button {
+  position: relative;
+  left: 22%;
+  margin-top: 13px;
+  MARGIN-RIGHT: 13PX;
+  height: 100px;
+  width: 250px;
+  BORDER-RADIUS: 16PX;
+  background-color: #000;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 1px solid #f46d3c;
+  color: #fff;
+}
+.info-page .pageresult .result .quizForm_result .quizAnswers_result .next {
+  position: absolute;
+  left: 45%;
+  top: 87%;
+  width: 140px;
+  height: 55px;
+  background-color: #f46d3c;
+  color: #000;
+}
+.info-page .pageresult .result .justify_answer {
+  background-color: #f46d3c;
+  color: #000;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 21%;
+  border-radius: 10px;
+}
+.info-page .pageresult .result .justify_answer .justify {
+  font-size: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 38%;
+  text-align: center;
+  margin-right: 9px;
+}
+.info-page .pageresult .result .justify_answer .justif {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+}
+.info-page .pageresult .result .justify_answer img {
+  top: 15%;
+  left: 48%;
+  width: 30px;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
